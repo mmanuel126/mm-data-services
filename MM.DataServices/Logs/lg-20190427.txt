@@ -1,0 +1,80 @@
+2019-04-27T15:12:58.5345630-04:00 0HLMB8HDOM3GK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-27T15:12:59.6714610-04:00 0HLMB8HDOM3GK:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-27T15:12:59.7115380-04:00 0HLMB8HDOM3GK:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-27T15:12:59.7974550-04:00 0HLMB8HDOM3GK:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 172.0844ms (afa2e885)
+2019-04-27T15:12:59.8175970-04:00 0HLMB8HDOM3GK:00000001 [INF] Request finished in 1294.8886ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-27T15:13:00.3137280-04:00 0HLMB8HDOM3GK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-27T15:13:01.0392320-04:00 0HLMB8HDOM3GK:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-27T15:13:01.1912760-04:00 0HLMB8HDOM3GK:00000002 [INF] Request finished in 877.5233ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-27T15:13:19.5130930-04:00 0HLMB8HDOM3GN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetSchoolsByState?state=GA&institutionType=3   (ca22a1cb)
+2019-04-27T15:13:19.8007910-04:00 0HLMB8HDOM3GN:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-27T15:13:19.8120250-04:00 0HLMB8HDOM3GN:00000001 [INF] Request finished in 298.9451ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-27T15:24:38.8452480-04:00 0HLMB8HDOM3GP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-27T15:24:38.8546780-04:00 0HLMB8HDOM3GP:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-27T15:24:38.8552160-04:00 0HLMB8HDOM3GP:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-27T15:24:38.8555610-04:00 0HLMB8HDOM3GP:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 1.1389ms (afa2e885)
+2019-04-27T15:24:38.8609820-04:00 0HLMB8HDOM3GP:00000001 [INF] Request finished in 10.5197ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-27T15:24:38.8767000-04:00 0HLMB8HDOM3GP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-27T15:24:39.1569980-04:00 0HLMB8HDOM3GP:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-27T15:24:39.1618060-04:00 0HLMB8HDOM3GP:00000002 [INF] Request finished in 285.1283ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-27T16:00:19.0615250-04:00 0HLMB9BS6E002:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-27T16:00:19.6997190-04:00 0HLMB9BS6E002:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-27T16:00:19.7312820-04:00 0HLMB9BS6E002:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-27T16:00:19.8045010-04:00 0HLMB9BS6E002:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 145.4655ms (afa2e885)
+2019-04-27T16:00:19.8143550-04:00 0HLMB9BS6E002:00000001 [INF] Request finished in 768.4586ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-27T16:00:19.9517000-04:00 0HLMB9BS6E002:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-27T16:00:20.3890670-04:00 0HLMB9BS6E002:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-27T16:00:20.5101530-04:00 0HLMB9BS6E002:00000002 [INF] Request finished in 558.4361ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-27T16:03:59.8407720-04:00 0HLMB9BS6E006:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/copyrights   (ca22a1cb)
+2019-04-27T16:03:59.8472920-04:00 0HLMB9BS6E006:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-27T16:03:59.8474360-04:00 0HLMB9BS6E006:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-27T16:03:59.8475540-04:00 0HLMB9BS6E006:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 0.358ms (afa2e885)
+2019-04-27T16:03:59.8475950-04:00 0HLMB9BS6E006:00000001 [INF] Request finished in 6.8631ms 200 text/plain; charset=utf-8 (791a596a)

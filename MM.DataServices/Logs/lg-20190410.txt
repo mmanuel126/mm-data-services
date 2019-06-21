@@ -1,0 +1,26 @@
+2019-04-10T19:26:44.5376020-04:00 0HLLU1FUTL8GG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-10T19:26:45.2217540-04:00 0HLLU1FUTL8GG:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-10T19:26:45.2532120-04:00 0HLLU1FUTL8GG:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-10T19:26:45.3784120-04:00 0HLLU1FUTL8GG:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 201.5087ms (afa2e885)
+2019-04-10T19:26:45.3995480-04:00 0HLLU1FUTL8GG:00000001 [INF] Request finished in 868.8444ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-10T19:26:45.5417210-04:00 0HLLU1FUTL8GG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-10T19:26:46.0399350-04:00 0HLLU1FUTL8GG:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-10T19:26:46.1515890-04:00 0HLLU1FUTL8GG:00000002 [INF] Request finished in 609.8487ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-10T19:26:59.2563630-04:00 0HLLU1FUTL8GJ:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/member/UploadProfilePhoto?memberId=4120 multipart/form-data; boundary=--------------------------795600799169656556057308 9562 (ca22a1cb)
+2019-04-10T19:26:59.5721840-04:00 0HLLU1FUTL8GJ:00000001 [INF] Executing action method "MM.DataServices.Controllers.MemberController.UploadProfilePhoto (MM.DataServices)" with arguments (["4120"]) - ModelState is Valid (ba7f4ac2)
+2019-04-10T19:37:05.3814960-04:00 0HLLU1FUTL8GJ:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-10T19:37:05.3889160-04:00 0HLLU1FUTL8GJ:00000001 [INF] Executed action "MM.DataServices.Controllers.MemberController.UploadProfilePhoto (MM.DataServices)" in 606015.9895ms (afa2e885)
+2019-04-10T19:37:05.3949760-04:00 0HLLU1FUTL8GJ:00000001 [INF] Request finished in 606121.0039ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-10T22:59:49.0913020-04:00 0HLLU1FUTL8GJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/member/UploadProfilePhoto?memberId=4120 multipart/form-data; boundary=--------------------------040778223399002664776770 9562 (ca22a1cb)
+2019-04-10T22:59:49.1136300-04:00 0HLLU1FUTL8GJ:00000002 [INF] Executing action method "MM.DataServices.Controllers.MemberController.UploadProfilePhoto (MM.DataServices)" with arguments (["4120"]) - ModelState is Valid (ba7f4ac2)

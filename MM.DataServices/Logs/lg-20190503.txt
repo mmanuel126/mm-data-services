@@ -1,0 +1,453 @@
+2019-05-03T14:05:26.8627450-04:00 0HLMEN1T3UHTK:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/api/account/refreshtoken?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6ImYyY2EyNDZmLTcyNjQtNGRiMi05NzcxLWY5NjA4MTIwMmVkMiIsImlhdCI6IjA0LzE5LzIwMTkgMDQ6NTU6NTYiLCJuYmYiOjE1NTU2NDk3NTYsImV4cCI6MTU1NTczNjE1NiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MCJ9.rlcWsZrj3qQ0eEpnGR9sVHZT24aAtiRVnkDq530L_zM  0 (ca22a1cb)
+2019-05-03T14:05:27.1542570-04:00 0HLMEN1T3UHTK:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:05:27.1881940-04:00 0HLMEN1T3UHTK:00000001 [INF] Request finished in 344.0047ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:06:38.3717890-04:00 0HLMEN1T3UHTK:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/api/account/refreshtoken?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6ImYyY2EyNDZmLTcyNjQtNGRiMi05NzcxLWY5NjA4MTIwMmVkMiIsImlhdCI6IjA0LzE5LzIwMTkgMDQ6NTU6NTYiLCJuYmYiOjE1NTU2NDk3NTYsImV4cCI6MTU1NTczNjE1NiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MCJ9.rlcWsZrj3qQ0eEpnGR9sVHZT24aAtiRVnkDq530L_zM  0 (ca22a1cb)
+2019-05-03T14:06:38.3861060-04:00 0HLMEN1T3UHTK:00000002 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:06:38'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:06:38.3915620-04:00 0HLMEN1T3UHTK:00000002 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:06:38'." (48071232)
+2019-05-03T14:06:38.7041400-04:00 0HLMEN1T3UHTK:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:06:38.7185410-04:00 0HLMEN1T3UHTK:00000002 [INF] Request finished in 361.5581ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:21:03.7711860-04:00 0HLMEN1T3UHTK:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:54470/api/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:21:03.7803430-04:00 0HLMEN1T3UHTK:00000003 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:21:03'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:21:03.7873910-04:00 0HLMEN1T3UHTK:00000003 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:21:03'." (48071232)
+2019-05-03T14:21:04.0901750-04:00 0HLMEN1T3UHTK:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:21:04.1063250-04:00 0HLMEN1T3UHTK:00000003 [INF] Request finished in 359.4795ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:22:58.2792350-04:00 0HLMEN1T3UHTK:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:54470/api/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:22:58.2984150-04:00 0HLMEN1T3UHTK:00000004 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:22:58'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:22:58.3036740-04:00 0HLMEN1T3UHTK:00000004 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:22:58'." (48071232)
+2019-05-03T14:22:58.5053530-04:00 0HLMEN1T3UHTK:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:22:58.5177310-04:00 0HLMEN1T3UHTK:00000004 [INF] Request finished in 250.7725ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:23:23.3378540-04:00 0HLMFUHM9IF08:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-03T14:23:24.1745910-04:00 0HLMFUHM9IF08:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-03T14:23:24.2126370-04:00 0HLMFUHM9IF08:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T14:23:24.3027600-04:00 0HLMFUHM9IF08:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 174.191ms (afa2e885)
+2019-05-03T14:23:24.3202690-04:00 0HLMFUHM9IF08:00000001 [INF] Request finished in 996.7262ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-03T14:23:24.8947540-04:00 0HLMFUHM9IF08:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-03T14:23:25.3965120-04:00 0HLMFUHM9IF08:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:23:25.5310540-04:00 0HLMFUHM9IF08:00000002 [INF] Request finished in 638.1224ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:32:23.4988210-04:00 0HLMFUHM9IF0B:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/api/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:32:23.7548050-04:00 0HLMFUHM9IF0B:00000001 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:32:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:32:23.7644100-04:00 0HLMFUHM9IF0B:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:32:23'." (48071232)
+2019-05-03T14:32:23.9923040-04:00 0HLMFUHM9IF0B:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:32:24.0086360-04:00 0HLMFUHM9IF0B:00000001 [INF] Request finished in 509.0083ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:33:04.3554830-04:00 0HLMFUHM9IF0B:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:33:04.3687470-04:00 0HLMFUHM9IF0B:00000002 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:33:04'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:33:04.3744350-04:00 0HLMFUHM9IF0B:00000002 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:33:04'." (48071232)
+2019-05-03T14:33:04.6061090-04:00 0HLMFUHM9IF0B:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:33:04.6193440-04:00 0HLMFUHM9IF0B:00000002 [INF] Request finished in 291.488ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:33:15.4131040-04:00 0HLMFUHM9IF0B:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:33:15.4274750-04:00 0HLMFUHM9IF0B:00000003 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:33:15'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:33:15.4332510-04:00 0HLMFUHM9IF0B:00000003 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:33:15'." (48071232)
+2019-05-03T14:33:15.6771240-04:00 0HLMFUHM9IF0B:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:33:15.6877820-04:00 0HLMFUHM9IF0B:00000003 [INF] Request finished in 291.2173ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:38:34.7953070-04:00 0HLMFUQ5UMFAS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-03T14:38:35.5953440-04:00 0HLMFUQ5UMFAS:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-03T14:38:35.6351050-04:00 0HLMFUQ5UMFAS:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T14:38:35.7186790-04:00 0HLMFUQ5UMFAS:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 164.2535ms (afa2e885)
+2019-05-03T14:38:35.7369800-04:00 0HLMFUQ5UMFAS:00000001 [INF] Request finished in 961.4072ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-03T14:38:35.8936240-04:00 0HLMFUQ5UMFAS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-03T14:38:36.4711900-04:00 0HLMFUQ5UMFAS:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:38:36.6096700-04:00 0HLMFUQ5UMFAS:00000002 [INF] Request finished in 717.2671ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:38:57.3984450-04:00 0HLMFUQ5UMFAV:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:38:57.6334130-04:00 0HLMFUQ5UMFAV:00000001 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:38:57'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:38:57.6418560-04:00 0HLMFUQ5UMFAV:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:38:57'." (48071232)
+2019-05-03T14:38:57.8991770-04:00 0HLMFUQ5UMFAV:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:38:57.9135170-04:00 0HLMFUQ5UMFAV:00000001 [INF] Request finished in 511.3212ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T14:40:07.7241900-04:00 0HLMFUQ5UMFAV:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T14:40:07.7321670-04:00 0HLMFUQ5UMFAV:00000002 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:40:07'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T14:40:07.7400570-04:00 0HLMFUQ5UMFAV:00000002 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 18:40:07'." (48071232)
+2019-05-03T14:40:08.0368190-04:00 0HLMFUQ5UMFAV:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T14:40:08.0493410-04:00 0HLMFUQ5UMFAV:00000002 [INF] Request finished in 362.5957ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T17:54:58.5285460-04:00 0HLMFUQ5UMFAV:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshtoken  0 (ca22a1cb)
+2019-05-03T17:54:58.5438600-04:00 0HLMFUQ5UMFAV:00000003 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 21:54:58'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T17:54:58.5532020-04:00 0HLMFUQ5UMFAV:00000003 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 21:54:58'." (48071232)
+2019-05-03T17:54:58.8715580-04:00 0HLMFUQ5UMFAV:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T17:54:58.9068730-04:00 0HLMFUQ5UMFAV:00000003 [INF] Request finished in 385.1425ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T17:56:11.7304220-04:00 0HLMFUQ5UMFAV:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-03T17:56:11.7474940-04:00 0HLMFUQ5UMFAV:00000004 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 21:56:11'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T17:56:11.7591770-04:00 0HLMFUQ5UMFAV:00000004 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/03/2019 21:56:11'." (48071232)
+2019-05-03T17:56:11.8890470-04:00 0HLMFUQ5UMFAV:00000004 [INF] Authorization failed for user: null. (a4ab1676)
+2019-05-03T17:56:11.9006810-04:00 0HLMFUQ5UMFAV:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-05-03T17:56:11.9115690-04:00 0HLMFUQ5UMFAV:00000004 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-05-03T17:56:11.9342620-04:00 0HLMFUQ5UMFAV:00000004 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2019-05-03T17:56:11.9390340-04:00 0HLMFUQ5UMFAV:00000004 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 99.675ms (afa2e885)
+2019-05-03T17:56:11.9487420-04:00 0HLMFUQ5UMFAV:00000004 [INF] Request finished in 243.862ms 401  (791a596a)
+2019-05-03T20:44:28.2735970-04:00 0HLMFUQ5UMFAV:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-03T20:44:28.2853730-04:00 0HLMFUQ5UMFAV:00000005 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/04/2019 00:44:28'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T20:44:28.2955560-04:00 0HLMFUQ5UMFAV:00000005 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/04/2019 00:44:28'." (48071232)
+2019-05-03T20:44:28.3260790-04:00 0HLMFUQ5UMFAV:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2019-05-03T20:44:28.3327860-04:00 0HLMFUQ5UMFAV:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-05-03T20:44:28.3401540-04:00 0HLMFUQ5UMFAV:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-05-03T20:44:28.3456810-04:00 0HLMFUQ5UMFAV:00000005 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2019-05-03T20:44:28.3508920-04:00 0HLMFUQ5UMFAV:00000005 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 47.4883ms (afa2e885)
+2019-05-03T20:44:28.3606070-04:00 0HLMFUQ5UMFAV:00000005 [INF] Request finished in 104.6947ms 401  (791a596a)
+2019-05-03T20:44:46.2310320-04:00 0HLMG56PUB32E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-03T20:44:46.8808170-04:00 0HLMG56PUB32E:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-03T20:44:46.9192750-04:00 0HLMG56PUB32E:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T20:44:47.0082980-04:00 0HLMG56PUB32E:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 171.2797ms (afa2e885)
+2019-05-03T20:44:47.0324210-04:00 0HLMG56PUB32E:00000001 [INF] Request finished in 808.0384ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-03T20:44:47.6267970-04:00 0HLMG56PUB32E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-03T20:44:48.1271960-04:00 0HLMG56PUB32E:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T20:44:48.2496280-04:00 0HLMG56PUB32E:00000002 [INF] Request finished in 624.948ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T20:44:57.8942070-04:00 0HLMG56PUB32H:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-03T20:44:58.0989850-04:00 0HLMG56PUB32H:00000001 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/04/2019 00:44:58'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T20:44:58.1150650-04:00 0HLMG56PUB32H:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '04/20/2019 01:24:55'
+Current time: '05/04/2019 00:44:58'." (48071232)
+2019-05-03T20:44:58.2217780-04:00 0HLMG56PUB32H:00000001 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjQ3NmRlNTJiLTI5NmUtNDZiMS1iMjdlLTA5YjcyY2Y4YzI1NCIsImlhdCI6IjA0LzE5LzIwMTkgMDE6MjQ6NTUiLCJuYmYiOjE1NTU2MzcwOTUsImV4cCI6MTU1NTcyMzQ5NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.bIKJZBUpgWg-kOKMbfQUYJU5mjh1b-ndOwY0jJ4GIas"]) - ModelState is Valid (ba7f4ac2)
+2019-05-03T21:43:51.3716630-04:00 0HLMG67QFV7GG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-03T21:43:52.0303160-04:00 0HLMG67QFV7GG:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-03T21:43:52.0686590-04:00 0HLMG67QFV7GG:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T21:43:52.1536450-04:00 0HLMG67QFV7GG:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 169.0352ms (afa2e885)
+2019-05-03T21:43:52.1730380-04:00 0HLMG67QFV7GG:00000001 [INF] Request finished in 816.5234ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-03T21:43:52.3669600-04:00 0HLMG67QFV7GG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-03T21:43:52.8712620-04:00 0HLMG67QFV7GG:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T21:43:52.9969830-04:00 0HLMG67QFV7GG:00000002 [INF] Request finished in 634.3317ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T21:47:10.5359320-04:00 0HLMG67QFV7GJ:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/token application/json 64 (ca22a1cb)
+2019-05-03T21:47:10.7679040-04:00 0HLMG67QFV7GJ:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T21:47:10.8204250-04:00 0HLMG67QFV7GJ:00000001 [INF] Request finished in 274.1022ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-03T21:47:47.6346040-04:00 0HLMG67QFV7GJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/login application/json 64 (ca22a1cb)
+2019-05-03T21:47:47.9970580-04:00 0HLMG67QFV7GJ:00000002 [INF] Executing action method "MM.DataServices.Controllers.AccountController.CreateToken (MM.DataServices)" with arguments (["MM.DataServices.Controllers.AccountController+LoginModel"]) - ModelState is Valid (ba7f4ac2)
+2019-05-03T21:47:58.4283830-04:00 0HLMG67QFV7GJ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T21:47:58.4798070-04:00 0HLMG67QFV7GJ:00000002 [INF] Executed action "MM.DataServices.Controllers.AccountController.CreateToken (MM.DataServices)" in 10786.2613ms (afa2e885)
+2019-05-03T21:47:58.4914430-04:00 0HLMG67QFV7GJ:00000002 [INF] Request finished in 10856.7332ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-03T21:48:56.5025140-04:00 0HLMG67QFV7GJ:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/login application/json 64 (ca22a1cb)
+2019-05-03T21:48:56.5435780-04:00 0HLMG67QFV7GJ:00000003 [INF] Executing action method "MM.DataServices.Controllers.AccountController.CreateToken (MM.DataServices)" with arguments (["MM.DataServices.Controllers.AccountController+LoginModel"]) - ModelState is Valid (ba7f4ac2)
+2019-05-03T21:58:57.0453820-04:00 0HLMG67QFV7GJ:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T21:58:57.0513980-04:00 0HLMG67QFV7GJ:00000003 [INF] Executed action "MM.DataServices.Controllers.AccountController.CreateToken (MM.DataServices)" in 600530.6638ms (afa2e885)
+2019-05-03T21:58:57.0577750-04:00 0HLMG67QFV7GJ:00000003 [INF] Request finished in 600554.4245ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-03T21:59:02.2701550-04:00 0HLMG67QFV7GJ:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/login application/json 61 (ca22a1cb)
+2019-05-03T21:59:02.2917420-04:00 0HLMG67QFV7GJ:00000004 [INF] Executing action method "MM.DataServices.Controllers.AccountController.CreateToken (MM.DataServices)" with arguments (["MM.DataServices.Controllers.AccountController+LoginModel"]) - ModelState is Valid (ba7f4ac2)
+2019-05-03T21:59:05.7103090-04:00 0HLMG67QFV7GJ:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T21:59:05.7153070-04:00 0HLMG67QFV7GJ:00000004 [INF] Executed action "MM.DataServices.Controllers.AccountController.CreateToken (MM.DataServices)" in 3440.2358ms (afa2e885)
+2019-05-03T21:59:05.7230560-04:00 0HLMG67QFV7GJ:00000004 [INF] Request finished in 3455.4428ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-03T22:00:35.8142220-04:00 0HLMG67QFV7GJ:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-03T22:00:35.8984210-04:00 0HLMG67QFV7GJ:00000005 [INF] Successfully validated the token. (60169667)
+2019-05-03T22:00:35.9221890-04:00 0HLMG67QFV7GJ:00000005 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-03T22:08:26.7451290-04:00 0HLMG67QFV7GJ:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-03T22:08:26.7835120-04:00 0HLMG67QFV7GJ:00000005 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 470857.5517ms (afa2e885)
+2019-05-03T22:08:26.7915340-04:00 0HLMG67QFV7GJ:00000005 [INF] Request finished in 470970.0894ms 200 application/json; charset=utf-8 (791a596a)
+2019-05-03T22:28:51.9887010-04:00 0HLMG67QFV7GJ:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-03T22:28:52.0143600-04:00 0HLMG67QFV7GJ:00000006 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '05/04/2019 02:01:05'
+Current time: '05/04/2019 02:28:51'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-03T22:28:52.0293390-04:00 0HLMG67QFV7GJ:00000006 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '05/04/2019 02:01:05'
+Current time: '05/04/2019 02:28:51'." (48071232)
+2019-05-03T22:28:52.0361640-04:00 0HLMG67QFV7GJ:00000006 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-03T22:29:58.7400580-04:00 0HLMG67QFV7GJ:00000006 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 66702.9938ms (afa2e885)
+2019-05-03T22:29:58.7767380-04:00 0HLMG67QFV7GJ:00000006 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at MM.DataServices.Controllers.AccountController.GetToken(UserModel user) in /MM/Projects/MM.DataServices/MM.DataServices/Controllers/AccountController.cs:line 94
+   at MM.DataServices.Controllers.AccountController.RefreshToken(String Authorization) in /MM/Projects/MM.DataServices/MM.DataServices/Controllers/AccountController.cs:line 72
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-03T22:29:58.7891560-04:00 0HLMG67QFV7GJ:00000006 [INF] Request finished in 66815.7105ms 500 text/html; charset=utf-8 (791a596a)

@@ -1,0 +1,244 @@
+2019-03-10T03:00:54.1320610-04:00 0HLL54OHBOL1E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-03-10T03:00:54.8879350-04:00 0HLL54OHBOL1E:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-10T03:00:54.9233610-04:00 0HLL54OHBOL1E:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-10T03:00:55.0275920-04:00 0HLL54OHBOL1E:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 181.3515ms (afa2e885)
+2019-03-10T03:00:55.0384110-04:00 0HLL54OHBOL1E:00000001 [INF] Request finished in 930.1119ms 200 text/plain; charset=utf-8 (791a596a)
+2019-03-10T03:00:55.4082270-04:00 0HLL54OHBOL1E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:00:55.9749820-04:00 0HLL54OHBOL1E:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:00:56.0900320-04:00 0HLL54OHBOL1E:00000002 [INF] Request finished in 681.805ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:01:48.1274600-04:00 0HLL54OHBOL1E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/Getcompanysectors   (ca22a1cb)
+2019-03-10T03:01:48.2152360-04:00 0HLL54OHBOL1E:00000003 [INF] Executing action method "MM.DataServices.Controllers.OrganizationsController.GetCompanySectors (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-10T03:01:52.8825980-04:00 0HLL54OHBOL1E:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-10T03:01:52.9930160-04:00 0HLL54OHBOL1E:00000003 [INF] Executed action "MM.DataServices.Controllers.OrganizationsController.GetCompanySectors (MM.DataServices)" in 4778.2784ms (afa2e885)
+2019-03-10T03:01:52.9932030-04:00 0HLL54OHBOL1E:00000003 [INF] Request finished in 4865.7004ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-10T03:01:53.0258410-04:00 0HLL54OHBOL1E:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:01:53.2682020-04:00 0HLL54OHBOL1E:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:01:53.2750180-04:00 0HLL54OHBOL1E:00000004 [INF] Request finished in 249.1979ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:02:00.6308290-04:00 0HLL54OHBOL1E:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:02:00.9078670-04:00 0HLL54OHBOL1E:00000005 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:02:00.9113830-04:00 0HLL54OHBOL1E:00000005 [INF] Request finished in 303.0827ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:02:01.0694670-04:00 0HLL54OHBOL1E:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:02:01.3288000-04:00 0HLL54OHBOL1E:00000006 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:02:01.3317970-04:00 0HLL54OHBOL1E:00000006 [INF] Request finished in 262.3698ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:06:47.2120790-04:00 0HLL54OHBOL1E:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:06:47.4711310-04:00 0HLL54OHBOL1E:00000007 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:06:47.4750460-04:00 0HLL54OHBOL1E:00000007 [INF] Request finished in 262.9174ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:06:47.5000640-04:00 0HLL54OHBOL1E:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:06:47.7828980-04:00 0HLL54OHBOL1E:00000008 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:06:47.7908270-04:00 0HLL54OHBOL1E:00000008 [INF] Request finished in 290.7916ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:06:56.7234050-04:00 0HLL54OHBOL1E:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:06:56.9172870-04:00 0HLL54OHBOL1E:00000009 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:06:56.9220750-04:00 0HLL54OHBOL1E:00000009 [INF] Request finished in 198.6979ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:06:56.9358550-04:00 0HLL54OHBOL1E:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:06:57.2312110-04:00 0HLL54OHBOL1E:0000000A [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:06:57.2344830-04:00 0HLL54OHBOL1E:0000000A [INF] Request finished in 298.642ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:07:01.2287920-04:00 0HLL54OHBOL1E:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:07:01.4310920-04:00 0HLL54OHBOL1E:0000000B [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:07:01.4365780-04:00 0HLL54OHBOL1E:0000000B [INF] Request finished in 213.5283ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:07:01.4506400-04:00 0HLL54OHBOL1E:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:07:01.6403080-04:00 0HLL54OHBOL1E:0000000C [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:07:01.6435060-04:00 0HLL54OHBOL1E:0000000C [INF] Request finished in 192.8665ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:07:03.2157040-04:00 0HLL54OHBOL1E:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:07:03.4920820-04:00 0HLL54OHBOL1E:0000000D [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:07:03.4960820-04:00 0HLL54OHBOL1E:0000000D [INF] Request finished in 280.4523ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:07:03.5112060-04:00 0HLL54OHBOL1E:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:07:03.8053470-04:00 0HLL54OHBOL1E:0000000E [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:07:03.8083860-04:00 0HLL54OHBOL1E:0000000E [INF] Request finished in 297.2018ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:07:16.1705440-04:00 0HLL54OHBOL1E:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:07:16.4055580-04:00 0HLL54OHBOL1E:0000000F [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:07:16.4097600-04:00 0HLL54OHBOL1E:0000000F [INF] Request finished in 239.2608ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:07:16.4307550-04:00 0HLL54OHBOL1E:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:07:16.7147290-04:00 0HLL54OHBOL1E:00000010 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:07:16.7180910-04:00 0HLL54OHBOL1E:00000010 [INF] Request finished in 287.4014ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:11:16.7184000-04:00 0HLL54UASM50E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-03-10T03:11:17.2616100-04:00 0HLL54UASM50E:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-10T03:11:17.2932490-04:00 0HLL54UASM50E:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-10T03:11:17.3682480-04:00 0HLL54UASM50E:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 145.1486ms (afa2e885)
+2019-03-10T03:11:17.3780950-04:00 0HLL54UASM50E:00000001 [INF] Request finished in 675.9ms 200 text/plain; charset=utf-8 (791a596a)
+2019-03-10T03:11:17.5001450-04:00 0HLL54UASM50E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:11:17.9160630-04:00 0HLL54UASM50E:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:11:18.0212310-04:00 0HLL54UASM50E:00000002 [INF] Request finished in 521.0563ms 500 text/html; charset=utf-8 (791a596a)
+2019-03-10T03:11:23.9947930-04:00 0HLL54UASM50E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/organizations/getinterests   (ca22a1cb)
+2019-03-10T03:11:23.9975270-04:00 0HLL54UASM50E:00000003 [INF] Executing action method "MM.DataServices.Controllers.OrganizationsController.GetInterests (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-10T03:11:41.4235480-04:00 0HLL54UASM50E:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-10T03:11:41.5915900-04:00 0HLL54UASM50E:00000003 [INF] Executed action "MM.DataServices.Controllers.OrganizationsController.GetInterests (MM.DataServices)" in 17594.576ms (afa2e885)
+2019-03-10T03:11:41.5917080-04:00 0HLL54UASM50E:00000003 [INF] Request finished in 17596.7007ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-10T03:11:41.6110710-04:00 0HLL54UASM50E:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-03-10T03:11:41.8510930-04:00 0HLL54UASM50E:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-10T03:11:41.8547390-04:00 0HLL54UASM50E:00000004 [INF] Request finished in 243.7036ms 500 text/html; charset=utf-8 (791a596a)

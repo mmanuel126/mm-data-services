@@ -1,0 +1,163 @@
+2019-05-04T01:09:02.9835870-04:00 0HLMG9QFKB6FE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-04T01:09:03.8448300-04:00 0HLMG9QFKB6FE:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-04T01:09:03.9432650-04:00 0HLMG9QFKB6FE:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-04T01:09:04.1358960-04:00 0HLMG9QFKB6FE:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 472.3281ms (afa2e885)
+2019-05-04T01:09:04.1845640-04:00 0HLMG9QFKB6FE:00000001 [INF] Request finished in 1198.8325ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-04T01:09:04.3707010-04:00 0HLMG9QFKB6FE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-04T01:09:05.1227310-04:00 0HLMG9QFKB6FE:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-04T01:09:05.3082670-04:00 0HLMG9QFKB6FE:00000002 [INF] Request finished in 936.1777ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-04T01:15:04.7024600-04:00 0HLMG9QFKB6FH:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-04T01:15:04.8927100-04:00 0HLMG9QFKB6FH:00000001 [INF] Failed to validate the token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY". (f3081a27)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '05/04/2019 02:01:05'
+Current time: '05/04/2019 05:15:04'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2019-05-04T01:15:04.9004160-04:00 0HLMG9QFKB6FH:00000001 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '05/04/2019 02:01:05'
+Current time: '05/04/2019 05:15:04'." (48071232)
+2019-05-04T01:15:05.0014490-04:00 0HLMG9QFKB6FH:00000001 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-04T01:15:10.2130930-04:00 0HLMG9QFKB6FH:00000001 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 5265.0241ms (afa2e885)
+2019-05-04T01:15:10.2264100-04:00 0HLMG9QFKB6FH:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.ArgumentException: IDX10709: JWT is not well formed: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY'.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadJwtToken(String token)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at MM.DataServices.Controllers.AccountController.GetPrincipalFromExpiredToken(String token) in /MM/Projects/MM.DataServices/MM.DataServices/Controllers/AccountController.cs:line 93
+   at MM.DataServices.Controllers.AccountController.RefreshToken(String Authorization) in /MM/Projects/MM.DataServices/MM.DataServices/Controllers/AccountController.cs:line 61
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-04T01:15:10.2427930-04:00 0HLMG9QFKB6FH:00000001 [INF] Request finished in 5533.3791ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-04T01:16:44.0315830-04:00 0HLMG9QFKB6FH:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-04T01:16:56.5563090-04:00 0HLMG9QFKB6FH:00000002 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-04T01:17:05.9462930-04:00 0HLMG9QFKB6FH:00000002 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 21906.0432ms (afa2e885)
+2019-05-04T01:24:43.6331420-04:00 0HLMGA37UD892:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-04T01:24:44.2704740-04:00 0HLMGA37UD892:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-04T01:24:44.3096340-04:00 0HLMGA37UD892:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-04T01:24:44.3952690-04:00 0HLMGA37UD892:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 166.4548ms (afa2e885)
+2019-05-04T01:24:44.4255370-04:00 0HLMGA37UD892:00000001 [INF] Request finished in 795.9604ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-04T01:24:44.5296070-04:00 0HLMGA37UD892:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-04T01:24:45.0134720-04:00 0HLMGA37UD892:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-04T01:24:45.1477140-04:00 0HLMGA37UD892:00000002 [INF] Request finished in 618.4809ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-04T01:25:03.5510680-04:00 0HLMGA37UD895:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-04T01:25:03.6748920-04:00 0HLMGA37UD895:00000001 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-04T01:25:20.7526830-04:00 0HLMGA37UD895:00000001 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 17138.1068ms (afa2e885)
+2019-05-04T01:25:20.7668460-04:00 0HLMGA37UD895:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey , KeyId: 
+'.
+Exceptions caught:
+ ''.
+token: '{"alg":"HS256","typ":"JWT"}.{"sub":"1","unique_name":"marc_manuel@hotmail.com","jti":"2d75b68d-b270-40d5-9b50-77d5c5e8221e","iat":"05/04/2019 01:59:05","nbf":1556935145,"exp":1556935265,"aud":"http://localhost:54470/"}'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at MM.DataServices.Controllers.AccountController.GetPrincipalFromExpiredToken(String token) in /MM/Projects/MM.DataServices/MM.DataServices/Controllers/AccountController.cs:line 93
+   at MM.DataServices.Controllers.AccountController.RefreshToken(String Authorization) in /MM/Projects/MM.DataServices/MM.DataServices/Controllers/AccountController.cs:line 61
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-04T01:25:20.7798160-04:00 0HLMGA37UD895:00000001 [INF] Request finished in 17230.7566ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-04T01:26:58.6304720-04:00 0HLMGA37UD895:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-04T01:26:58.6493080-04:00 0HLMGA37UD895:00000002 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-04T02:11:41.7469510-04:00 0HLMGATFQRCMM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-04T02:11:42.4087130-04:00 0HLMGATFQRCMM:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-04T02:11:42.4516440-04:00 0HLMGATFQRCMM:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-04T02:11:42.5400040-04:00 0HLMGATFQRCMM:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 166.9577ms (afa2e885)
+2019-05-04T02:11:42.5601810-04:00 0HLMGATFQRCMM:00000001 [INF] Request finished in 823.9691ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-04T02:11:42.7462300-04:00 0HLMGATFQRCMM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-04T02:11:43.2867950-04:00 0HLMGATFQRCMM:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-04T02:11:43.4027970-04:00 0HLMGATFQRCMM:00000002 [INF] Request finished in 664.1159ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-04T02:12:19.4701470-04:00 0HLMGATFQRCMP:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-04T02:12:19.5796610-04:00 0HLMGATFQRCMP:00000001 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-04T02:30:03.4722830-04:00 0HLMGB7O5P4CS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-05-04T02:30:04.1356510-04:00 0HLMGB7O5P4CS:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-05-04T02:30:04.1728270-04:00 0HLMGB7O5P4CS:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-04T02:30:04.2596420-04:00 0HLMGB7O5P4CS:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 169.1858ms (afa2e885)
+2019-05-04T02:30:04.2812970-04:00 0HLMGB7O5P4CS:00000001 [INF] Request finished in 819.4827ms 200 text/plain; charset=utf-8 (791a596a)
+2019-05-04T02:30:04.4767970-04:00 0HLMGB7O5P4CS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-05-04T02:30:04.9822610-04:00 0HLMGB7O5P4CS:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 145
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-04T02:30:05.0993530-04:00 0HLMGB7O5P4CS:00000002 [INF] Request finished in 624.0875ms 500 text/html; charset=utf-8 (791a596a)
+2019-05-04T02:31:44.7337920-04:00 0HLMGB7O5P4CV:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/account/refreshLogin  0 (ca22a1cb)
+2019-05-04T02:31:44.8509970-04:00 0HLMGB7O5P4CV:00000001 [INF] Executing action method "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" with arguments (["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidW5pcXVlX25hbWUiOiJtYXJjX21hbnVlbEBob3RtYWlsLmNvbSIsImp0aSI6IjJkNzViNjhkLWIyNzAtNDBkNS05YjUwLTc3ZDVjNWU4MjIxZSIsImlhdCI6IjA1LzA0LzIwMTkgMDE6NTk6MDUiLCJuYmYiOjE1NTY5MzUxNDUsImV4cCI6MTU1NjkzNTI2NSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1NDQ3MC8ifQ.O_NrLPn5suJe1SYA-x0GmXpibtnUo_MaxHLukfHV_IY"]) - ModelState is Valid (ba7f4ac2)
+2019-05-04T02:35:47.9788770-04:00 0HLMGB7O5P4CV:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-05-04T02:35:48.0253130-04:00 0HLMGB7O5P4CV:00000001 [INF] Executed action "MM.DataServices.Controllers.AccountController.RefreshToken (MM.DataServices)" in 243226.6035ms (afa2e885)
+2019-05-04T02:35:48.0323040-04:00 0HLMGB7O5P4CV:00000001 [INF] Request finished in 243290.1725ms 200 application/json; charset=utf-8 (791a596a)

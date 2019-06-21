@@ -1,0 +1,186 @@
+2019-04-06T06:43:56.7522390-04:00  [WRN] Heartbeat took longer than "00:00:01" at "04/06/2019 10:43:55 +00:00". (439152bf)
+2019-04-06T07:06:36.6976170-04:00  [WRN] Heartbeat took longer than "00:00:01" at "04/06/2019 11:06:36 +00:00". (439152bf)
+2019-04-06T22:01:39.8692630-04:00 0HLLQVJSAQ12I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-06T22:01:40.4769310-04:00 0HLLQVJSAQ12I:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-06T22:01:40.5141680-04:00 0HLLQVJSAQ12I:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T22:01:40.5933410-04:00 0HLLQVJSAQ12I:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 155.8415ms (afa2e885)
+2019-04-06T22:01:40.6032370-04:00 0HLLQVJSAQ12I:00000001 [INF] Request finished in 754.2141ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-06T22:01:40.9238850-04:00 0HLLQVJSAQ12I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-06T22:01:41.4889150-04:00 0HLLQVJSAQ12I:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:01:41.5984560-04:00 0HLLQVJSAQ12I:00000002 [INF] Request finished in 674.5334ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:02:21.4260630-04:00 0HLLQVJSAQ12I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:54470/members/getmemberposts?memberID=1   (ca22a1cb)
+2019-04-06T22:02:21.7005670-04:00 0HLLQVJSAQ12I:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:02:21.7089540-04:00 0HLLQVJSAQ12I:00000003 [INF] Request finished in 305.6278ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:02:21.8869670-04:00 0HLLQVJSAQ12I:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-06T22:02:22.1142180-04:00 0HLLQVJSAQ12I:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:02:22.1173170-04:00 0HLLQVJSAQ12I:00000004 [INF] Request finished in 230.3591ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:04:05.2192180-04:00 0HLLQVJSAQ12M:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/member/getmemberposts?memberID=1 application/json 0 (ca22a1cb)
+2019-04-06T22:04:05.4659380-04:00 0HLLQVJSAQ12M:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:04:05.5034380-04:00 0HLLQVJSAQ12M:00000001 [INF] Request finished in 284.7783ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:06:57.3726210-04:00 0HLLQVJSAQ12M:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/member/getmemberposts?memberID=1 application/json 0 (ca22a1cb)
+2019-04-06T22:06:57.6688330-04:00 0HLLQVJSAQ12M:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:06:57.6725180-04:00 0HLLQVJSAQ12M:00000002 [INF] Request finished in 299.9342ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:07:53.1944100-04:00 0HLLQVJSAQ12M:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/member/getmemberposts?memberID=1 application/json 0 (ca22a1cb)
+2019-04-06T22:07:53.5081650-04:00 0HLLQVJSAQ12M:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:07:53.5107330-04:00 0HLLQVJSAQ12M:00000003 [INF] Request finished in 316.3419ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:08:52.6591210-04:00 0HLLQVJSAQ12M:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:54470/services/member/GetMemberPosts?memberID=1 application/json 0 (ca22a1cb)
+2019-04-06T22:08:52.9033560-04:00 0HLLQVJSAQ12M:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:08:52.9213260-04:00 0HLLQVJSAQ12M:00000004 [INF] Request finished in 262.2092ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:09:01.9034190-04:00 0HLLQVJSAQ12M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetMemberPosts?memberID=1 application/json  (ca22a1cb)
+2019-04-06T22:09:02.0450930-04:00 0HLLQVJSAQ12M:00000005 [INF] Executing action method "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-04-06T22:40:20.2637350-04:00 0HLLR09FS81O8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-06T22:40:20.8450120-04:00 0HLLR09FS81O8:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-06T22:40:20.8752860-04:00 0HLLR09FS81O8:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T22:40:20.9520400-04:00 0HLLR09FS81O8:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 148.3507ms (afa2e885)
+2019-04-06T22:40:20.9612120-04:00 0HLLR09FS81O8:00000001 [INF] Request finished in 715.1917ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-06T22:40:21.1365440-04:00 0HLLR09FS81O8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-06T22:40:21.6048270-04:00 0HLLR09FS81O8:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:40:21.7210690-04:00 0HLLR09FS81O8:00000002 [INF] Request finished in 584.5058ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:40:32.2994500-04:00 0HLLR09FS81OB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetMemberPosts?memberID=1 application/json  (ca22a1cb)
+2019-04-06T22:40:32.4239400-04:00 0HLLR09FS81OB:00000001 [INF] Executing action method "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-04-06T22:58:24.3643380-04:00 0HLLR0JIVB0GA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-06T22:58:24.9073450-04:00 0HLLR0JIVB0GA:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-06T22:58:24.9407680-04:00 0HLLR0JIVB0GA:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T22:58:25.0140320-04:00 0HLLR0JIVB0GA:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 146.4717ms (afa2e885)
+2019-04-06T22:58:25.0242440-04:00 0HLLR0JIVB0GA:00000001 [INF] Request finished in 676.6097ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-06T22:58:25.1851370-04:00 0HLLR0JIVB0GA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-06T22:58:25.6365610-04:00 0HLLR0JIVB0GA:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T22:58:25.7404750-04:00 0HLLR0JIVB0GA:00000002 [INF] Request finished in 555.3177ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T22:58:43.8899880-04:00 0HLLR0JIVB0GD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetMemberPosts?memberID=1 application/json  (ca22a1cb)
+2019-04-06T22:58:44.0460520-04:00 0HLLR0JIVB0GD:00000001 [INF] Executing action method "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-04-06T23:15:09.1524130-04:00 0HLLR0JIVB0GD:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T23:15:09.3415280-04:00 0HLLR0JIVB0GD:00000001 [INF] Executed action "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" in 985350.0481ms (afa2e885)
+2019-04-06T23:15:09.3416240-04:00 0HLLR0JIVB0GD:00000001 [INF] Request finished in 985423.8219ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-06T23:15:42.0780910-04:00 0HLLR0JIVB0GD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetMemberPosts?memberID=1 application/json  (ca22a1cb)
+2019-04-06T23:15:42.0829470-04:00 0HLLR0JIVB0GD:00000002 [INF] Executing action method "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-04-06T23:17:51.9827030-04:00 0HLLR0JIVB0GD:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T23:17:51.9831820-04:00 0HLLR0JIVB0GD:00000002 [INF] Executed action "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" in 129898.7141ms (afa2e885)
+2019-04-06T23:17:51.9832800-04:00 0HLLR0JIVB0GD:00000002 [INF] Request finished in 129901.5551ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-06T23:18:05.4945760-04:00 0HLLR0UIVAVBK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/api/Copyrights   (ca22a1cb)
+2019-04-06T23:18:06.0488950-04:00 0HLLR0UIVAVBK:00000001 [INF] Executing action method "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-04-06T23:18:06.0807670-04:00 0HLLR0UIVAVBK:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T23:18:06.1628780-04:00 0HLLR0UIVAVBK:00000001 [INF] Executed action "MM.DataServices.Controllers.CopyrightsController.Get (MM.DataServices)" in 153.6639ms (afa2e885)
+2019-04-06T23:18:06.1736000-04:00 0HLLR0UIVAVBK:00000001 [INF] Request finished in 705.4495ms 200 text/plain; charset=utf-8 (791a596a)
+2019-04-06T23:18:06.3409470-04:00 0HLLR0UIVAVBK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/favicon.ico   (ca22a1cb)
+2019-04-06T23:18:06.7720470-04:00 0HLLR0UIVAVBK:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.IO.FileNotFoundException: Could not find file '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'.
+File name: '/MM/Projects/MM.DataServices/MM.DataServices/wwwroot/lg/index.html'
+   at System.IO.FileInfo.get_Length()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(Stream outputStream, String fileName, Int64 offset, Nullable`1 count, CancellationToken cancel)
+   at MM.DataServices.Startup.<>c__DisplayClass5_0.<<Configure>b__1>d.MoveNext() in /MM/Projects/MM.DataServices/MM.DataServices/Startup.cs:line 85
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-04-06T23:18:06.8780100-04:00 0HLLR0UIVAVBK:00000002 [INF] Request finished in 537.0306ms 500 text/html; charset=utf-8 (791a596a)
+2019-04-06T23:18:15.6858560-04:00 0HLLR0UIVAVBN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetMemberPosts?memberID=1 application/json  (ca22a1cb)
+2019-04-06T23:18:15.8127150-04:00 0HLLR0UIVAVBN:00000001 [INF] Executing action method "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-04-06T23:31:00.1361720-04:00 0HLLR0UIVAVBN:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T23:31:00.2746390-04:00 0HLLR0UIVAVBN:00000001 [INF] Executed action "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" in 764500.4412ms (afa2e885)
+2019-04-06T23:31:00.2747340-04:00 0HLLR0UIVAVBN:00000001 [INF] Request finished in 764567.2956ms 200 application/json; charset=utf-8 (791a596a)
+2019-04-06T23:31:06.6211370-04:00 0HLLR0UIVAVBN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:54470/services/member/GetMemberPosts?memberID=6 application/json  (ca22a1cb)
+2019-04-06T23:31:06.6259710-04:00 0HLLR0UIVAVBN:00000002 [INF] Executing action method "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" with arguments (["6"]) - ModelState is Valid (ba7f4ac2)
+2019-04-06T23:32:57.4759140-04:00 0HLLR0UIVAVBN:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-04-06T23:32:57.4764540-04:00 0HLLR0UIVAVBN:00000002 [INF] Executed action "MM.DataServices.Controllers.MemberController.GetMemberPosts (MM.DataServices)" in 110849.7702ms (afa2e885)
+2019-04-06T23:32:57.4764990-04:00 0HLLR0UIVAVBN:00000002 [INF] Request finished in 110852.2803ms 200 application/json; charset=utf-8 (791a596a)
