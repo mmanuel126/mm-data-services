@@ -20,6 +20,7 @@ namespace MM.DataServices
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseUrls(new ConfigurationBuilder().AddEnvironmentVariables("").Build()["ASPNETCORE_URLS"] ?? "http://*:8080")
                 .Build();
     }
 }
