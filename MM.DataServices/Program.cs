@@ -16,7 +16,7 @@ namespace MM.DataServices
         {
             BuildWebHost(args).Run();
         }
-
+        //just testing
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
