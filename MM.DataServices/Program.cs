@@ -16,11 +16,11 @@ namespace MM.DataServices
         {
             BuildWebHost(args).Run();
         }
-        //just testing
+
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls(new ConfigurationBuilder().AddEnvironmentVariables("").Build()["ASPNETCORE_URLS"] ?? "http://*:8080")
+              //  .UseUrls(new ConfigurationBuilder().AddEnvironmentVariables("").Build()["ASPNETCORE_URLS"] ?? "http://*:8080")
                 .Build();
     }
 }
